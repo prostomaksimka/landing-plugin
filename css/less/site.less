@@ -1,0 +1,835 @@
+// Site stylesheets
+
+// Imports
+// Example: @import "../jquery.jcarousel/jquery.jcarousel.less";
+@import "../fonts/fonts.less";
+// Local variables
+@baner-link: #34b3d1;
+@internal-color: #79b543;
+// Local mixins
+.logo() {
+  display: block;
+  text-decoration: none;
+}
+// Header
+#structure {
+  background: #f7f8f8 no-repeat left top;
+}
+.header-fix,
+header {
+  height: 142px;
+}
+.advantages,
+.header-fix,
+header {
+  background: @internal-color no-repeat left top;
+}
+#main-page .footer-top,
+#main-page .header-fix,
+#main-page header,
+#main-page #content {
+  background: #35b3d1 no-repeat left top;
+}
+.header-fix {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+#top-pic {
+  .logo();
+  margin: 23px 0 0;
+  float: left;
+}
+.pad-bot {
+  padding-bottom: @footer-height;
+}
+// Main navigation
+nav {
+  float: right;
+  margin: 48px 0 0;
+  font: 17px  @font-regular;
+  li {
+    float: left;
+    margin: 0 0 0 3px;
+  }
+  a {
+    .logo();
+    .border-radius(3px);
+    color: #fff;
+    padding: 8px 9px;
+    border: 1px solid transparent;
+  }
+  a:hover,
+  .active a {
+    border: 1px solid #e6f6f9;
+  }
+}
+.news-block,
+.reviews,
+#main-page .recommend,
+#main-page .baner-block {
+  color: #707173;
+}
+#main-page .baner {
+  &-block {
+    height: 500px;
+    background:url(../images/b-pic-1.png) no-repeat center -1px;
+    a {
+      color: @baner-link;
+      border-bottom: 1px solid @baner-link;
+      &:hover {
+        border-bottom-color: transparent;
+      }
+    }
+  }
+  &-header {
+    font-size: 49px;
+    margin: 128px 0 32px;
+  }
+}
+.baner {
+  &-block {
+    height: 515px;
+    background:url(../images/b-pic-2.png) no-repeat center -1px;
+    a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid #fff;
+      &:hover {
+        border-bottom-color: transparent;
+      }
+    }
+  }
+  &-header {
+    font-size: 59px;
+    line-height: 105%;
+    margin: 168px 0 46px;
+  }
+  &-desc {
+    line-height: 115%;
+  }
+}
+
+#main-page main {
+  a {
+    color: #fff;
+    border-bottom: 1px solid @link-color;
+  }
+}
+.landing h1 {
+  margin-bottom: 80px;
+}
+main {
+  a {
+    color: @internal-color;
+    border-bottom: 1px solid @internal-color;
+    &:hover {
+      border-bottom-color: transparent;
+    }
+  }
+  h1 {
+    text-align: center;
+  }
+  p {
+    margin: 16px 0;
+  }
+}
+#main-page #content{
+  &,
+  h1 {
+    color: #fff;
+  }
+  h1 {
+    font-size: 59px;
+  }
+}
+#content  {
+  &,
+  h1 {
+    color: @internal-color;
+  }
+  padding-bottom: 1px;
+  .wrapper {
+    padding-top: 77px;
+    padding-bottom: 65px;
+  }
+}
+#main-page .accord {
+  color: #2793ac;
+  margin-bottom: 82px;
+  &>li {
+    background:url(../images/accord/accord-border.png) repeat-x left top;
+    &:first-child {
+      background: none no-repeat left top;
+    }
+  }
+  &-fon1 {
+    background:url(../images/accord/pic1.png) no-repeat 888px 61px;
+  }
+  &-fon2 {
+    background:url(../images/accord/pic2.png) no-repeat 888px 61px;
+  }
+  &-fon3 {
+    background:url(../images/accord/pic3.png) no-repeat 888px 61px;
+  }
+  &-fon4 {
+    background:url(../images/accord/pic4.png) no-repeat 888px 61px;
+  }
+  &-fon5 {
+    background:url(../images/accord/pic5.png) no-repeat 888px 61px;
+  }
+  &-fon6 {
+    background:url(../images/accord/pic6.png) no-repeat 888px 61px;
+  }
+  &-fon7 {
+    background:url(../images/accord/pic7.png) no-repeat 890px 71px;
+  }
+  &-fon8 {
+    background:url(../images/accord/pic8.png) no-repeat 901px 64px;
+  }
+}
+
+.accord {
+  color: #4e8a20;
+  font-size: 21px;
+  line-height: 120%;
+  margin: 5px 0 76px;
+  &,
+  &>li {
+    list-style-type: none;
+    list-style-position: outside;
+  }
+  &>li {
+    cursor: pointer;
+    overflow: hidden;
+    background:url(../images/accord/accord-border-int.png) repeat-x left top;
+    &:first-child {
+      background: none no-repeat left top;
+    }
+    &>div {
+      overflow: hidden;
+    }
+  }
+  &-header {
+    font-size: 36px;
+    line-height: 120%;
+    margin: 58px 0 10px;
+  }
+  &-for-popup {
+    overflow: hidden;
+    padding-top: 37px;
+    height: 1px;
+  }
+  &-desc {
+    padding: 1px 0;
+    p {
+      margin: 38px 0 30px;
+      line-height: 100%!important;
+    }
+  }
+  &-link {
+    display: block;
+    padding-bottom: 15px;
+    .accord-header {
+      margin-top: 15px;
+    }
+    &:hover {
+      border-bottom-color: @internal-color;
+    }
+  }
+  &-fon1 {
+    background:url(../images/accord/pic1-int.png) no-repeat 888px 61px;
+  }
+  &-fon2 {
+    background:url(../images/accord/pic2-int.png) no-repeat 888px 61px;
+  }
+  &-fon3 {
+    background:url(../images/accord/pic3-int.png) no-repeat 888px 61px;
+  }
+  &-fon4 {
+    background:url(../images/accord/pic4-int.png) no-repeat 888px 61px;
+  }
+  &-fon5 {
+    background:url(../images/accord/pic5-int.png) no-repeat 888px 61px;
+  }
+  &-fon6 {
+    background:url(../images/accord/pic6-int.png) no-repeat 888px 61px;
+  }
+  &-fon7 {
+    background:url(../images/accord/pic7-int.png) no-repeat 890px 71px;
+  }
+  &-fon8 {
+    background:url(../images/accord/pic8-int.png) no-repeat 884px 77px;
+  }
+}
+#main-page .advantages {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-top: 0;
+  .wrapper {
+    padding-top: 82px;
+  }
+}
+.advantages-page {
+  text-align: center;
+}
+.advantages-page .advantages,
+#main-page .advantages {
+  color: #89ba25;
+  background: none no-repeat left top;
+  .wrapper {
+    padding-bottom: 35px;
+  }
+  &-header {
+    margin: 0;
+  }
+  &-fon1 {
+    background:url(../images/advantages/pic1.png) no-repeat center top;
+  }
+  &-fon2 {
+    background:url(../images/advantages/pic2.png) no-repeat center top;
+  }
+  &-fon3 {
+    background:url(../images/advantages/pic3.png) no-repeat center top;
+  }
+  &-fon4 {
+    background:url(../images/advantages/pic4.png) no-repeat center top;
+  }
+  &-fon5 {
+    background:url(../images/advantages/pic5.png) no-repeat center top;
+  }
+  &-fon6 {
+    background:url(../images/advantages/pic6.png) no-repeat center top;
+  }
+  &-fon7 {
+    background:url(../images/advantages/pic7.png) no-repeat center top;
+  }
+  &-fon8 {
+    background:url(../images/advantages/pic8.png) no-repeat center top;
+  }
+}
+.advantages {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 164px;
+  padding-bottom: 111px;
+  margin-top: -115px;
+  background: #79b543 url(../images/corner-adv.png) no-repeat center top;
+  .wrapper {
+    padding-bottom: 1px;
+  }
+  &,
+  &-item {
+    text-align: center;
+  }
+  &-header {
+    font-size: 59px;
+    line-height: 120%;
+    margin-top: 41px;
+  }
+  &-title {
+    margin: 6px 120px;
+    line-height: 105%;
+  }
+  &-row-center {
+    margin-bottom: 0;
+  }
+  
+  &-item {
+    width: 320px;
+    font-size: 28px;
+    line-height: 110%;
+    vertical-align: top;
+    display: inline-block;
+    padding: 110px 0 0;
+    text-align: center;
+    margin: 105px 0 0;
+  }
+  &-fon1 {
+    background:url(../images/advantages/pic1-int.png) no-repeat center top;
+  }
+  &-fon2 {
+    background:url(../images/advantages/pic2-int.png) no-repeat center top;
+  }
+  &-fon3 {
+    background:url(../images/advantages/pic3-int.png) no-repeat center top;
+  }
+  &-fon4 {
+    background:url(../images/advantages/pic4-int.png) no-repeat center top;
+  }
+  &-fon5 {
+    background:url(../images/advantages/pic5-int.png) no-repeat center top;
+  }
+  &-fon6 {
+    background:url(../images/advantages/pic6-int.png) no-repeat center top;
+  }
+  &-fon7 {
+    background:url(../images/advantages/pic7-int.png) no-repeat center top;
+  }
+  &-fon8 {
+    background:url(../images/advantages/pic8-int.png) no-repeat center top;
+  }
+}
+#main-page .galery {
+  &-arrow {
+    &-left,
+    &-right {
+      background:url(../images/galery-arrow.png) no-repeat left top;
+      &:active {
+        background-position: left 1px;
+      }
+    }
+    &-right {
+      background-position: right top;
+      &:active {
+        background-position: right 1px;
+      }
+    }
+  }
+}
+.news-block .galery-wrap-block {
+  margin-bottom: 13px;
+}
+.galery {
+  width: 10000px;
+  overflow: hidden;
+  &-wrap {
+    width: 885px;
+    margin: 0 0 0 27px;
+    overflow: hidden;
+    &-block {
+      position: relative;
+      margin: 0;
+    }
+  }
+  &,
+  &>li {
+    font-size: 16px;
+    line-height: 120%;
+    list-style-type: none;
+    list-style-position: outside;
+    p {
+      margin: 0;
+    }
+  }
+  &>li {
+    width: 254px;
+    float: left;
+    margin-left: 41px;
+    padding-top: 82px;
+    background:url(../images/gal-fon.png) no-repeat center top;
+  }
+  &-signature {
+    font-family: @font-light-italic;
+    margin: 16px 0;
+  }
+  &-arrow {
+    &-left,
+    &-right  {
+      .logo();
+      .size(20; 37);
+      top: 3px;
+      position: absolute;
+      background:url(../images/galery-arrow.png) no-repeat left -40px;
+      &:active {
+        background-position: left -39px;
+      }
+    }
+    &-left {
+      left: 0;
+    }
+    &-right {
+      right: 0;
+      background-position: right -40px;
+      &:active {
+        background-position: right -39px;
+      }
+    }
+  }
+}
+.news-block,
+.reviews,
+.recommend {
+  background: #e5e6e6 no-repeat left top;
+  &-header {
+    font-size: 59px;
+    text-align: center;
+    line-height: 120%;
+    margin: 70px 0 63px;
+  }
+}
+.reviews {
+  padding-bottom: 0px;
+  &-header {
+    margin-top: 91px;
+  }
+}
+body .news-block {
+  margin-top: -48px;
+  background-color: #f7f8f8;
+  &-header {
+    margin-top: 48px;
+    margin-bottom: 41px;
+  }
+  .galery>li {
+    padding-top: 10px;
+    background: none no-repeat left top;
+  }
+}
+.fon-corner {
+  background: #e5e6e6 url(../images/advanteges-other.png) no-repeat top center;
+  .wrapper {
+    padding-top: 170px;
+  }
+}
+#main-page #content.fon-corner-main {
+  background: #35b3d1 url(../images/main-advanteges.png) no-repeat center top;
+}
+#main-page  .pad-bot .fon-corner-main {
+  background: #35b3d1 url(../images/advanteges.png) no-repeat center top;
+  .wrapper {
+    padding-top: 244px;
+  }
+}
+.pad-bot .fon-corner-main {
+  background: @internal-color url(../images/advanteges-footer.png) no-repeat center top;
+}
+#main-page footer.fon-corner-main {
+  background: #35b3d1 url(../images/main-advanteges-footer.png) no-repeat center top;
+}
+footer.fon-corner-main {
+  padding-top: 164px;
+  background: @internal-color url(../images/main-advanteges.png) no-repeat center top;
+}
+
+// Footer
+footer {
+  .footer-counters {
+    float: left;
+    padding: 0 90px 0 20px;
+
+    img {
+      float: left;
+      margin-right: 10px;
+    }
+  }
+  .footer-copyright {
+    a {
+    }
+  }
+}
+#main-page .footer-mid {
+  &,
+  .input {
+    background: #31a8c9 no-repeat left top;
+  }
+}
+#main-page .footer-copir {
+  color: #34b3d1;
+}
+.footer-copir {
+  color: #7ab543;
+}
+.footer {
+  &-top {
+    height: 150px;
+    background: @internal-color no-repeat left top;
+    .wrapper {
+      .clearfix();
+      padding-top: 26px;
+    }
+    &,
+    & a {
+      color: #fff;
+    }
+  }
+  &-pic {
+    float: left;
+  }
+  &-tel {
+    font: 63px/90% @font-regular;
+    &-block {
+      float: right;
+      text-align: right;
+      font-size: 17px;
+      a {
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &-mid {
+    height: 134px;
+    &,
+    .input {
+      background: #4d891f no-repeat left top;
+    }
+    .wrapper {
+      padding-top: 49px;
+    }
+    &-col1,
+    &-col2,
+    &-col3,
+    &-col4 {
+      float: left;
+      margin-right: 13px;
+    }
+    &-col5 {
+      float: right;
+    }
+    &-col1 {
+      width: 122px;
+    }
+    &-col3,
+    &-col2 {
+      width: 123px;
+    }
+    &-col4 {
+      width: 439px;
+      margin-right: 0;
+    }
+  }
+  &-bot {
+    height: 54px;
+    font: 13px @font-regular;
+    background: #f7f8f8 no-repeat left top;
+    .wrapper {
+      padding-top: 21px;
+    }
+  }
+  &-nav li,
+  &-nav a {
+    color: #34b3d1;
+  }
+  &-nav {
+    float: right;
+    li {
+      display: inline;
+      padding: 0 0 0 6px;
+    }
+    a {
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  &-slide-text {
+    height: 24px;
+  }
+  &-right-text {
+    display: none;
+  }
+}
+.pagination .page {
+  &-forward,
+  &-backward {
+    a {
+      border-bottom: 1px solid transparent;
+    }
+  }
+}
+#main-page .style-but {
+  color: #35b3d1;
+}
+.footer-nav a {
+  color: #7ab543;
+}
+#main-page .footer-nav a {
+  color: #34b3d1;
+}
+.center {
+  text-align: center;
+}
+.style-but {
+  .border-radius(@input-border-radius);
+  font: 16px @font-regular;
+  border: none;
+  line-height: 38px;
+  height: 38px;
+  color: @internal-color;
+  width: 123px;
+  background: #fff no-repeat left top;
+}
+// Blocks
+.articles-list {
+  .list-hr;
+  padding-top: 5px;
+
+  .articles-title {
+    .h4;
+  }
+}
+
+.contacts-map {
+  .pull-right;
+  .square(400);
+
+  img {
+    .size(100%);
+    .image-bordered;
+  }
+}
+.contacts-title {
+  .margin-bottom(3);
+  .bold;
+}
+.contacts-value {
+  padding-left: 10px;
+
+  &.contacts-several-values {
+    padding: 3px 0 5px 10px;
+  }
+}
+.two-col-form {
+  .equal-grid(100%; 2; 20px);
+}
+.fon-form {
+  padding: 20px 20px 10px;
+  background: @internal-color no-repeat left top;
+  .input {
+    background: @internal-color no-repeat left top;
+  }
+}
+.galleries-list {
+  .list-hr;
+  padding-top: 5px;
+
+  .galleries-title-container {
+    .clearfix;
+
+    .galleries-title {
+      .h4;
+    }
+    .galleries-all {
+      .pull-right;
+    }
+  }
+}
+.galleries-foto-container {
+  .clearfix;
+  .margin-bottom(20);
+
+  .galleries-foto {
+    float: left;
+    margin: 10px 5px 0 5px;
+
+    img {
+      .size(164);
+      .image-bordered;
+    }
+  }
+}
+
+.info-list {
+  .list-hr;
+  border-top: 1px solid @hr-color-base;
+  padding-top: 20px;
+  margin-top: 10px;
+
+  .info-title {
+    .h4;
+  }
+}
+
+.news-list {
+  .list-hr;
+  padding-top: 5px;
+
+  .news-title {
+    .h4;
+  }
+}
+.news-date {
+  .margin-bottom(10);
+  color: @internal-color;
+  font-size: 16px;
+}
+
+.resources-form-title {
+  border-top: 1px solid @hr-color-base;
+  padding-top: 20px;
+  margin-top: 10px;
+  .h3;
+}
+.resources-list {
+  .list-hr;
+  padding-top: 5px;
+
+  .resources-title {
+    .margin-bottom(5);
+    .bold;
+  }
+  .resources-announce {
+    p {
+      .padding-bottom(5);
+    }
+  }
+  .resources-link {
+    .padding-bottom(10);
+
+    a {
+      padding-right: 10px;
+    }
+  }
+}
+
+.search-results-list {
+  padding-top: 5px;
+
+  .search-results-title {
+    .margin-bottom(5);
+    .bold;
+  }
+  .search-results-announce {
+    p {
+      .padding-bottom(5);
+    }
+  }
+  .search-results-link {
+    .padding-bottom(10);
+  }
+}
+
+.sitemap-item {
+  .margin-bottom(5);
+}
+.sitemap-title {
+  .h4;
+}
+
+// Modals
+.modal {
+  .popup;
+}
+
+// Colors
+.black,
+.black a {
+  color: @black;
+}
+.white,
+.white a {
+  color: @white;
+}
+.red,
+.red a {
+  color: @red;
+}
+.green,
+.green a {
+  color: @green;
+}
+
+// Markers
+.marker1 {
+  .marker('../images/marker1.gif'; 0 0 0 12px; 4px);
+}
+
+// Horizontal lines
+.hr1 {
+  .hr(@hr-color-base; 10px 0 20px 0);
+}
